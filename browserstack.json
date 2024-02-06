@@ -1,0 +1,42 @@
+{
+    "auth": {
+        "username": "telltrix_Y3XJrV",
+        "access_key": "v9dJkhMCqqs8LcA5VxNf"
+    },
+    "browsers": [
+        {
+            "browser": "chrome",
+            "os": "Windows 10",
+            "versions": [
+                "latest"
+            ]
+        },
+        {
+            "browser": "firefox",
+            "os": "Windows 10",
+            "versions": [
+                "latest"
+            ]
+        }
+    ],
+    "run_settings": {
+        "cypress_config_file": "./cypress.config.js",
+        "specs": ["cypress/e2e/barriga/functional.cy.js"],
+        "project_name": "Curso-cypress",
+        "build_name": "barriga1",
+        "exclude": [],
+        "parallels": "1",
+        "npm_dependencies": {
+            "cypress-xpath": "^2.0.1"
+        },
+        "package_config_options": {},
+        "headless": true
+    },
+    "connection_settings": {
+        "local": false,
+        "local_identifier": null,
+        "local_mode": null,
+        "local_config_file": null
+    },
+    "disable_usage_reporting": false
+}
