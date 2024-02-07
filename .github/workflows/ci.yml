@@ -1,5 +1,5 @@
 name: End-to-end tests
-on: commit
+on: push
 jobs:
   chrome:
     runs-on: ubuntu-22.04
