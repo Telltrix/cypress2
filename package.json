@@ -4,15 +4,21 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1",
-    "cypress:open": "cypress open",
-    "cypress:run": "cypress run"
+    "testEr": "echo \"Error: no test specified\" && exit 1",
+    "cy:open": "cypress open",
+    "test": "cypress run",
+    "cy:open:mobile": "cypress open --config viewportWidth=410 viewportHeight=860",
+    "test:mobile": "cypress run --config viewportWidth=410 viewportHeight=860"
   },
   "keywords": [],
   "author": "",
   "license": "ISC",
   "dependencies": {
-    "cypress": "^13.6.0",
     "cypress-xpath": "^2.0.1"
+  },
+  "devDependencies": {
+    "cypress": "^13.6.4",
+    "cypress-plugin-steps": "^1.1.1",
+    "playwright-webkit": "^1.41.2"
   }
 }
