@@ -1,5 +1,7 @@
 name: End-to-end tests
-on: push
+on: 
+  schedule:
+    - cron:  '30 12 * * *'
 jobs:
   chrome:
     runs-on: ubuntu-22.04
