@@ -3,14 +3,13 @@ on: push
   
 jobs:
   chrome:
-    runs-on: ubuntu-22.04
+    runs-on: ubuntu-latest
     name: E2E on Chrome
     steps:
-      - uses: actions/checkout@v4
-      - uses: cypress-io/github-action@v6
+      - name: Checkout
+        uses: actions/checkout@v4
+      - name: Cypress run
+        uses: cypress-io/github-action@v6
         with:
+          spec: cypress/e2e/barriga/**/*
           browser: chrome
-          name: Chrome
-          on: commit
-          run: npm run test -- --spec cypress/e2e/barriga/** --browser chrome
-
