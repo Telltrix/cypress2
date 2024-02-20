@@ -7,6 +7,10 @@ jobs:
     name: E2E on Chrome
     steps:
       - uses: actions/checkout@v4
-      - name: Rodando testes
-        run: npm run test -- --spec cypress/e2e/barriga/** --browser chrome
-        
+      - uses: cypress-io/github-action@v6
+        with:
+          browser: chrome
+          name: Chrome
+          on: commit
+          run: npm run test -- --spec cypress/e2e/barriga/** --browser chrome
+
