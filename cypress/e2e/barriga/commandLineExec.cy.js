@@ -5,3 +5,9 @@
 // Para visualizar a execução basta adicionar o comando --headed  e para não fechar após a execução é o comando --no-exit
 // Para executar em um browser especifico: --browser chrome
 // Para rodas todos os testes de uma pasta especifica, vc deve navegar até a pasta e npm run cypress:run -- --spec cypress/e2e/barriga e adicionar o /**/*
+
+
+// Rodando pipeline com schedules: 
+// on: 
+//   schedule:
+//   - cron:  '45 15 * * *'
