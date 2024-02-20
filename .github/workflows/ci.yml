@@ -8,5 +8,5 @@ jobs:
     steps:
       - uses: actions/checkout@v4
       - name: Rodando testes
-        run: npm run test -- --spec cypress/e2e/barriga/**/* --browser chrome
+        run: npm run test -- --spec cypress/e2e/barriga/** --browser chrome
         
